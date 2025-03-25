@@ -1,0 +1,78 @@
+// Styling for the Address Form
+
+:host {
+    display: block;
+    background-color: #f8f9fa;
+    width: 100%;
+  }
+  
+  // Dialog Title
+  h2[mat-dialog-title] {
+    background-color: #2196f3;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    margin: -24px -24px 20px;
+  }
+  
+  // Dialog Content (Increased Width)
+  div[mat-dialog-content] {
+    width: 650px; // Increased width
+    display: block;
+    margin: auto;
+  }
+  
+  form {
+    display: block;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  
+  // Targeting City, State, and Zip Code to Align in One Row
+  mat-form-field:nth-child(4),
+  mat-form-field:nth-child(5),
+  mat-form-field:nth-child(6) {
+    display: inline-block;
+    width: calc(33.33% - 8px); // Equal width for City, State, Zip
+    margin-right: 12px;
+  }
+  
+  // Remove extra margin from the last field (Zip Code)
+  mat-form-field:nth-child(6) {
+    margin-right: 0;
+  }
+  
+  // Dialog Actions (Buttons)
+  div[mat-dialog-actions] {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding-top: 10px;
+  }
+  
+  button {
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  button[color="primary"] {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  button:not([color="primary"]) {
+    background-color: #e0e0e0;
+    color: black;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
