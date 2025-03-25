@@ -4,6 +4,22 @@
     padding: 20px;
     font-family: 'Arial', sans-serif;
   
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    
     h2 {
       font-size: 24px;
       font-weight: bold;
